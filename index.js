@@ -469,7 +469,7 @@ function (
             query.timeExtent = {
                 start: startTime,
                 end: endTime
-            }
+            };
             featureLayerQuake.queryFeatureCount(query).then(function(count){
                 const formatCount = number.format(count);
                 const formatTotal = number.format(total);
